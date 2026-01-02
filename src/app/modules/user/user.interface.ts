@@ -25,15 +25,15 @@ IsActive {
 export interface IUser {
     name: string,
     email: string;
-    password: string;
-    phone: string;
+    password?: string;
+    phone?: string;
     picture?: string;
     address?: string;
     isDeleted?: string;
     isActive?:IsActive;
     isVerified?:string;
-    role:Role;
-     auths : IAuthProvider[];   
-    bookings:Types.ObjectId[];
-    guides: Types.ObjectId[]
+    role?:Role;
+     auths? : IAuthProvider[];   
+    bookings?:Types.ObjectId[];
+    guides?: Types.ObjectId[]
 }   
