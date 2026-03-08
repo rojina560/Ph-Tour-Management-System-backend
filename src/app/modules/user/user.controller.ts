@@ -18,7 +18,7 @@ const createUser = catchAsync(async (
 sendResponse(res,{
       success:true,
         statusCode: httpStatus.CREATED,
-        message:"All Users get successfully",
+        message:" create all user successfully",
         data:user
      })}
   )
