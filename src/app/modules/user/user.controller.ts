@@ -4,7 +4,6 @@ import { Request, Response, NextFunction } from 'express'
 import httpStatus, { StatusCodes } from 'http-status-codes'
 import { UserServices } from './user.services'
 import { catchAsync } from '../../utils/catchAsync'
-import { regex, success } from 'zod'
 import sendResponse from '../../utils/sendResponse'
 
 
